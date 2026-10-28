@@ -24,5 +24,12 @@ namespace PermDynamics_Markova.Pages
 		{
 			InitializeComponent();
 		}
-	}
+
+		private void OpenPageChart(object sender, RoutedEventArgs e)
+		{
+			float value = Convert.ToInt32(tb_value.Text);
+			MainWindow.pointsInfo.Add(new Classes.PointInfo(value));
+			MainWindow.OpenPages(MainWindow.pages.chart);
+        }
+    }
 }

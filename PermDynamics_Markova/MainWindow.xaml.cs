@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PermDynamics_Markova.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,7 @@ namespace PermDynamics_Markova
 	/// </summary>
 	public partial class MainWindow : Window
 	{
+		public static List<PointInfo> pointsInfo { get; set; } = new List<PointInfo>();
 		public MainWindow()
 		{
 			InitializeComponent();
